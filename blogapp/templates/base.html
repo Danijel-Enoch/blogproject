@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<Html>
+    <head>
+        <title>
+            Welcom to My first Blog
+        </title>        
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'blogapp/css/bootstrap.min.css' %}">
+    <style>
+    
+    </style>
+
+    </head>
+
+    <body>
+        <script src="{% static 'blogapp/js/bootstrap.min.js' %}"></script>
+<div class="site-heading">
+        <h3 class="site-heading my-3 mt-3 text-black"> Welcome to my first project</h3>
+        </div>
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+  </ul>
+</nav>
+
+
+        
+       
+
+        <div class="container">
+
+
+            <div class="col p-2 my-custom-row justify-content-center algin-items-center ">
+
+                {% block content%}
+
+                {%endblock%}
+                </div>
+
+        
+        
+        
+        </div>
+            
+
+        
+   
+    </body>
+   
+</Html>
